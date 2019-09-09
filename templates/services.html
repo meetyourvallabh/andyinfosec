@@ -1,0 +1,66 @@
+<title>Cyber Security Services | Andy InfoSec</title>
+{% extends 'layout.html' %}
+
+{% block body %}
+<main>
+        <div class="container sr-only" style="margin-top: 165px;">
+            <div class="row">
+                <div class="col text-center">
+                        <h1 style="font-family: 'Source Sans Pro', sans-serif;">Services</h1>
+                        <hr style="margin-top: -9px;">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 31px;">
+                <div class="col-xl-8 offset-xl-2">
+                    <p class="text-center">Andy InfoSec service offerings include VAPT, cyber security awareness programs (seminars, workshops, campaigns) as well as supporting security of websites for SMEs at affordable cost.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-boxed">
+                <div class="container" style="margin-top: 165px;">
+                    <div class="intro">
+                        <h1 class="text-center" style="font-family: 'Source Sans Pro', sans-serif;">Services</h1>
+                        <p class="text-center">Andy InfoSec service offerings include VAPT, cyber security awareness programs (seminars, workshops, campaigns) as well as supporting security of websites for SMEs at affordable cost.</p>
+                    </div>
+                    <div class="row justify-content-center features">
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div data-aos="fade-right" data-aos-once="true" class="box"><i class="fas fa-user-tie icon" style="color: rgb(252,22,30);"></i>
+                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Corporate Training</h3>
+                                <p class="description">Want to make your employees more efficient by getting them trained in any kind of Cyber Security Training Program?</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div data-aos="fade-up" data-aos-once="true" class="box"><i class="fas fa-globe icon" style="color: rgb(252,22,30);"></i>
+                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Web Application/Website Testing</h3>
+                                <p class="description">Web application security testing is a broad process that includes a multitude of processes that enable security testing of a Web application</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div data-aos="fade-left" data-aos-once="true" class="box"><i class="fa fa-list-alt icon" style="color: rgb(252,22,30);"></i>
+                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+                                <p class="description">Vulnerability Assessment and Penetration Testing (VAPT) provides enterprises with a more comprehensive application evaluation than any single test alone</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div data-aos="fade-right" data-aos-once="true" class="box"><i class="fas fa-wrench icon" style="color: rgb(252,22,30);"></i>
+                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Vulnerability Management</h3>
+                                <p class="description">No need to worry as our Vulnerability Management Service can help you in keeping your business secure even after various updates or upgrades.</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div data-aos="fade-up" data-aos-once="true" class="box"><i class="fas fa-mobile-alt icon" style="color: rgb(252,22,30);"></i>
+                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Mobile Application Security Testing</h3>
+                                <p class="description">No need to worry about heavy costs of Security Testing as we will make it fit to your budget that will not affect your pocket much.</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                            <div data-aos="fade-left" data-aos-once="true" class="box"><i class="fas fa-door-open icon" style="color: rgb(252,22,30);"></i>
+                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Door to Desk (Red Team)</h3>
+                                <p class="description">We call it Door to Desk as we test your Physical Environment/ Premises of your organization from the Entry gate to Employees Desk. It is called as Red Team Security Testing.</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section class="portfolio-block call-to-action border-bottom">
+                <div class="container">
+                        <div class="d-flex justify-content-center align-items-center content" data-aos="fade-up" data-aos-once="true"><a class="btn btn-outline-danger btn-lg" role="button" href="{{url_for('contact_us')}}">Inquire more</a></div>
+                </div>
+            </section>
+    </main>
+{% endblock %}

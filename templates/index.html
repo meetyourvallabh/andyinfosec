@@ -1,0 +1,130 @@
+<title>Home | Andy InfoSec</title>
+{% extends 'layout.html' %} 
+
+{% block body %}
+    <main class="page lanidng-page">
+        <div class="container">
+            <section class="portfolio-block skills" style="padding-bottom: 4px;">
+                <div class="container" style="height: 378px;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card special-skill-item border-0">
+                                    <a href="{{url_for('training_programs')}}"><div class="card-header bg-transparent border-0"><i class="icon ion-easel" style="background-color: rgb(255,22,30);"></i></div></a>
+                                <div class="card-body">
+                                    <a href="{{url_for('training_programs')}}"><h3 class="card-title" style="font-family: Aldrich, sans-serif;">Training</h3></a>
+                                    <p class="card-text">Andy InfoSec provides various training programs for individuals at our office and offer customized corporate training programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card special-skill-item border-0">
+                                    <a href="{{url_for('research')}}"><div class="card-header bg-transparent border-0"><i class="icon ion-ios-flask-outline" style="background-color: rgb(255,22,30);"></i></div></a>
+                                <div class="card-body">
+                                    <a href="{{url_for('research')}}"><h3 class="card-title" style="font-family: Aldrich, sans-serif;">Research</h3></a>
+                                    <p class="card-text">Andy InfoSec also aspires to be a preferred platform for cyber security researchers by supporting/guiding in their research as well as facilitating knowledge sharing events.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card special-skill-item border-0">
+                                    <a href="{{url_for('services')}}"><div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline" style="background-color: rgb(255,22,30);"></i></div></a>
+                                <div class="card-body">
+                                        <a href="{{url_for('services')}}"><h3 class="card-title" style="font-family: Aldrich, sans-serif;">Services</h3></a>
+                                    <p class="card-text">Andy InfoSec service offerings include VAPT, cyber security awareness programs (seminars, workshops, campaigns) as well as supporting security of websites for SMEs at affordable cost.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pricing-table" style="margin-top: 0px;padding-bottom: 48px;">
+                <div class="container" style="margin-top: 0px;">
+                    <div class="center" style="height: 81px;">
+                        <h2 style="font-family: 'Source Sans Pro', sans-serif;">Training Programs</h2>
+                        <hr style="margin-top: -9px;">
+                    </div>
+                    <div class="pricing-area text-center">
+                        <div class="row">
+                                <a href="{{url_for('cyber_security_for_beginners')}}">
+                            <div class="col-sm-4 plan price red wow fadeInLeft">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading">
+                                        <h1><strong>CYBER SECURITY FOR BEGINNERS</strong></h1><span class="price"><strong><em>7,800 INR&nbsp;</em></strong>/&nbsp;<br><strong><em>10 Sessions of 2 Hrs each</em></strong></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('cyber_security_for_beginners')}}" class="btn">Read More</a></li>
+                                </ul>
+                            </div></a>
+                            <a href="{{url_for('web_application_security_expert')}}">
+                            <div class="col-sm-4 plan price green wow fadeIn">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading">
+                                        <h1><strong>WEB APPLICATION SECURITY EXPERT</strong></h1><span class="price"><strong><em>33,000 INR&nbsp;</em></strong>/<br><strong><em>120 Hrs including Hands-on Training</em></strong><br></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('web_application_security_expert')}}" class="btn">Read more</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="{{url_for('certified_cyber_security_professional')}}">
+                            <div class="col-sm-4 plan price yellow wow fadeInRight"><img src="{{url_for('static',filename='assets/img/ribon_one.png')}}">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading" style="height: auto;">
+                                        <h1 style="font-size: 30px;margin-bottom: 7px;"><strong>CERTIFIED CYBER SECURITY PROFESSIONAL</strong></h1><span class="price"><strong><em>49,500 INR&nbsp;</em></strong>/<br><strong>180 Hrs including Hands-on Training</strong><br></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('certified_cyber_security_professional')}}" class="btn">Read More</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="{{url_for('security_operation_center_expert')}}">
+                            <div class="col-sm-4 offset-sm-4 offset-lg-4 plan price yellow wow fadeIn">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading" style="background-color: rgb(62,62,62);">
+                                        <h1><strong>SECURITY OPERATION CENTER EXPERT</strong></h1><span class="price"><strong><em>25,000 INR&nbsp;</em></strong>/<br><strong><em>80 Hrs of Hands-on Training</em></strong><br></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('security_operation_center_expert')}}" class="btn">Read more</a></li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <div class="features-boxed">
+        <div class="container sr-only">
+            <div class="intro">
+                <h2 class="text-center" style="font-family: Aldrich, sans-serif;">Features </h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div data-aos="fade-right" data-aos-once="true" class="box"><i class="fa fa-map-marker icon" style="color: rgb(252,22,30);"></i>
+                        <h3 class="name" style="font-family: Aldrich, sans-serif;">Works everywhere</h3>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div data-aos="fade-up" data-aos-once="true" class="box"><i class="fa fa-clock-o icon" style="color: rgb(252,22,30);"></i>
+                        <h3 class="name" style="font-family: Aldrich, sans-serif;">Always available</h3>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div data-aos="fade-left" data-aos-once="true" class="box"><i class="fa fa-list-alt icon" style="color: rgb(252,22,30);"></i>
+                        <h3 class="name" style="font-family: Aldrich, sans-serif;">Customized Schedule</h3>
+                        <p class="description">Customized training schedule to suit your availability as well as learning speed.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div data-aos="fade-right" data-aos-once="true" class="box"><i class="fa fa-leaf icon" style="color: rgb(252,22,30);"></i>
+                        <h3 class="name" style="font-family: Aldrich, sans-serif;">Organic </h3>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div data-aos="fade-up" data-aos-once="true" class="box"><i class="fa fa-plane icon" style="color: rgb(252,22,30);"></i>
+                        <h3 class="name" style="font-family: Aldrich, sans-serif;">Fast </h3>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div data-aos="fade-left" data-aos-once="true" class="box"><i class="fa fa-phone icon" style="color: rgb(252,22,30);"></i>
+                        <h3 class="name" style="font-family: Aldrich, sans-serif;">Mobile-first</h3>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p><a href="#" class="learn-more">Learn more »</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

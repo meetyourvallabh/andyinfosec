@@ -1,0 +1,80 @@
+<title>Offer for Top 5 | Andy InfoSec</title>
+
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+body{
+    background-color: white;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+        @media screen and (min-width: 601px) {
+  h1.hd1 {
+    font-size: 50px !important;
+    margin-top: 65px !important;
+  }
+  p.p1{
+      font-size: 20px !important;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  h1.hd1 {
+    font-size: 30px !important;
+    margin-top: 40px !important;
+  }
+  p.p1{
+      font-size: 15px;
+  }
+}
+</style>
+<div class="article-dual-column" style="padding-top: 75px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="intro">
+                        <h1 class="text-center hd1" style="font-family: 'Source Sans Pro', sans-serif;margin-bottom: 15px;letter-spacing: 0px;">Offer for Toppers</h1>
+                        </div>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-xl-10 offset-xl-1">
+                    <p class="text-left p1"><strong>Are you a Top Ranker?</strong> If you are in Top 5 in your class you may qualify for 33% discount on training programs at Andy InfoSec. This discount is applicable on all <a href="{{url_for('training_programs')}}">Training programs</a>.</br>
+                    </br>To qualify for this offer, all of the following conditions must be met:</p>
+                        <ul><li>Should be studying in graduation or should have graduated not earlier than 2018.</li>
+                        <li>Should be in Top 5 rank in his/her class in at least one academic year during his/her graduation.</li>
+                        <li>Must have enrolled for the training program on website before applying for the discount.</li>
+                        <li>Will need to certify his/her rank in class from the college in the discount application form.</li>
+                        <li>The above discount application form will be provided by Andy InfoSec on registered email during enrolment.</li>
+                        <li>Should have met our admission counselor face to face at least once and this discount must be approved the counselor.</li>
+                        <li>Entire offer fees for the program must be paid before start of training.</li>
+                        <li>Must have followed Facebook page of <a href="https://www.facebook.com/AndyInfoSec/">Andy InfoSec</a>.</li>
+                        <li>Should have shared the respective training program link on social media from the share icon available on the page.</li>
+                        <li>Should have posted his/her intent to join this training program on above social media post and should have got at least 3 likes/comments/shares on it.</li></ul></br>
+                        <p class="text-left p1">For any clarifications, schedule a call or meeting with admission counsellor <a href="{{url_for('contact_us')}}">here</a>.
+                        </br>
+                        <p class="text-center p1">View all <a href="{{url_for('training_programs')}}">Training programs</a>.</p></br>
+                        <ul><i><p class="text-left">In case you have paid the fees and you do not qualify for the offer due to not fulfilling any of above conditions, you will have the option to pay the difference of fees and continue or ask for full refund of fees before start of training and cancel your enrolment.</i></ul></p>
+                </div>
+            </div>
+        </div> 
+      </div>
+      <div class="row text-center" style="margin-top: 23px;">
+            <div class="col-md-10 col-lg-5 col-xl-6 offset-md-1 offset-xl-3">
+                
+                  <div class="row">
+                  <div class="col"><a class="btn btn-primary" role="button" href="{{url_for('enroll_now')}}" style="background-color: rgb(254,100,100);width: 136px;font-size: 20px;">Enroll now</a></div>
+                  <div class="col"><a class="btn btn-warning" role="button" href="{{url_for('contact_us')}}" style="font-size: 20px;">Inquire more</a></div>
+                   </div>
+                </div>
+            </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<section class="portfolio-block call-to-action border-bottom">
+<div class="text-center d-flex justify-content-center align-items-center content" data-aos="fade-up" data-aos-once="true">
+<h3>Want to communicate with us ?</h3><a class="btn btn-outline-success btn-lg" role="button" href="https://api.whatsapp.com/send?phone=+919021928862&amp;text=hello I'm interested in cyber security">Chat on whatsapp&nbsp;<i class="fa fa-whatsapp"></i></a></div>
+</section>
+{% endblock %} 

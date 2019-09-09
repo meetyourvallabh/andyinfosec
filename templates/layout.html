@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134039747-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-134039747-1');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/fonts/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/fonts/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/fonts/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/fonts/material-icons.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Article-Dual-Column.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Contact-Form-Clean.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/FAQ-Frequentlly-Asked-Questions-1.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/FAQ-Frequentlly-Asked-Questions.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Features-Boxed.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Features-Clean.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Footer-Clean.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Header-Blue.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Header-Dark.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Pricing-Tables.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/Pricing-Tables-1.css')}}">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/MUSA_carousel-product-cart-slider-1.cs')}}s">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/MUSA_carousel-product-cart-slider.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/News-Cards.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/pricing-tables-by-itvider.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/pricing.css')}}">
+    <style>
+    .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	left:30px;
+	background-color:rgb(10, 146, 33);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    font-size:40px;
+}
+
+.my-float{
+	margin-top:10px;
+}
+    </style>
+    
+
+    <style>
+            body {
+            background-color: #f5f5f5;
+        }
+        
+        .adminActions {
+          position: fixed;
+          bottom: 35px; right: 35px;
+        }
+        
+          .adminButton {
+            height: 60px;
+            width: 60px;
+            background-color: rgba(67, 83, 143, .8);
+            border-radius: 50%;
+            display: block;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+          }
+        
+            .adminButton i {
+              font-size: 22px;
+            }
+        
+          .adminButtons {
+            position: absolute;
+            width: 100%;
+            bottom: 120%;
+            text-align: center;
+          }
+        
+            .adminButtons a {
+              display: block;
+              width: 45px;
+              height: 45px;
+              border-radius: 50%;
+              text-decoration: none;
+              margin: 10px auto 0;
+              line-height: 1.15;
+              color: #fff;
+              opacity: 0;
+              visibility: hidden;
+              position: relative;
+              box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3);
+            }
+        
+              .adminButtons a:hover {
+                transform: scale(1.05);
+              }
+        
+              .adminButtons a:nth-child(1) {background-color: #0357A5; transition: opacity .2s ease-in-out .3s, transform .15s ease-in-out;}
+              .adminButtons a:nth-child(2) {background-color: #16b3fb; transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;}
+              .adminButtons a:nth-child(3) {background-color: #1081cc; transition: opacity .2s ease-in-out .2s, transform .15s ease-in-out;}
+              .adminButtons a:nth-child(4) {background-color: rgb(42, 129, 8); transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;}
+              .adminButtons a:nth-child(5) {background-color: rgb(77, 77, 77); transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;}
+              .adminButtons a:nth-child(6) {background-color: rgb(77, 77, 77); transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;}
+              .adminActions a i {
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%);
+              }
+        
+          .adminToggle {
+            -webkit-appearance: none;
+            position: absolute;
+            border-radius: 50%;
+            top: 0; left: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            z-index: 2;
+            transition: box-shadow .2s ease-in-out;
+            box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
+          }
+        
+            .adminToggle:hover {
+              box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
+            }
+        
+            .adminToggle:checked ~ .adminButtons a {
+              opacity: 1;
+              visibility: visible;
+            }
+            </style>
+            <style>
+              @media screen and (min-width: 768px) {
+            .mycarousel {
+              width: 50%;
+            }
+          }
+              </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white shadow-lg portfolio-navbar gradient" style="background: linear-gradient(120deg,#121212,#222222);height: auto;">
+        <div class="container"><a class="navbar-brand logo" href="{{url_for('index')}}" style="height: 74px;margin-left: 24px;"><img src="{{url_for('static',filename='assets/img/logoad7.png')}}" style="height: 140px;margin: -13px;margin-top: -24px;margin-right: -24px;width: 201px;margin-left: 19px;"></a><button class="navbar-toggler"
+                data-toggle="collapse" data-target="#navbarNav" style="margin-top: 15px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('index')}}">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('training_programs')}}">Training Programs</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('research')}}">Research</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('services')}}">Services</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" data-hover="dropdown">Questions</a>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                            <a class="dropdown-item" role="presentation" href="{{url_for('why_andy_infosec')}}">Why AndyInfoSec ?</a>
+                            <a class="dropdown-item" role="presentation" href="{{url_for('when_can_i_start')}}">When can I Start ?</a>
+                            <a class="dropdown-item" role="presentation" href="{{url_for('customized_schedule')}}">Customized Schedule</a>
+                            <a class="dropdown-item" role="presentation" href="{{url_for('faq')}}">FAQ</a></div>
+                        </li>
+                          <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" data-hover="dropdown">Contacts</a>
+                          <div class="dropdown-menu dropdown-menu-right" role="menu"><a class="dropdown-item" role="presentation" href="{{url_for('about_us')}}">About us</a><a class="dropdown-item" role="presentation" href="{{url_for('privacy_policy')}}">Privacy Policy</a><a class="dropdown-item" role="presentation" href="{{url_for('contact_us')}}">Contact Us</a></div>
+                    </li>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation">
+                          <i class="fa fa-phone" style="font-size:24px;color:red"></i> +91 9021928862</br>
+                          <i class="fa fa-envelope" style="font-size:24px;color:red"></i> info@andyinfosec.com</a></li>
+                      </ul>
+                      <a href="#"></a></div>
+        </div>
+    </nav>
+    {%block body%} {%endblock%}
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Training Programs</h3>
+                        <ul>
+                            <li><a href="{{url_for('cyber_security_for_beginners')}}">Cyber Security for Beginners</a></li>
+                            <li><a href="{{url_for('web_application_security_expert')}}">Web Application Security Expert</a></li>
+                            <li><a href="{{url_for('certified_cyber_security_professional')}}">Certified Cyber Security Professional</a></li>
+                            <li><a href="{{url_for('security_operation_center_expert')}}">Security Operation Center Expert</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Questions</h3>
+                        <ul>
+                            <li><a href="{{url_for('why_andy_infosec')}}">Why Andy InfoSec ?</a></li>
+                            <li><a href="{{url_for('when_can_i_start')}}">When can I Start ?</a></li>
+                            <li><a href="{{url_for('customized_schedule')}}">Customized Schedule</a></li>
+                            <li><a href="{{url_for('faq')}}">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li><a href="{{url_for('about_us')}}">About us</a></li>
+                            <li><a href="{{url_for('privacy_policy')}}">Privacy Policy</a></li>
+                            <li><a href="{{url_for('contact_us')}}">Contact us</a></li>
+                            <li><a href="{{url_for('page_sitemap')}}">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg- item social"><a href="https://www.facebook.com/AndyInfoSec/"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/andyinfosec_"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/company/andyinfosec/"><i class="icon ion-social-linkedin"></i></a><a href="https://www.instagram.com/andyinfosec/"><i class="icon ion-social-instagram-outline"></i></a>
+                        <p
+                            class="copyright">Andy InfoSec© 2019</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+   <a href="https://api.whatsapp.com/send?phone=+919021928862&text=hello, I'm interested in cyber security." class="float">
+            <i class="fa fa-whatsapp my-float"></i>
+            </a>
+
+
+            <div class="adminActions">
+                    <input type="checkbox" name="adminToggle" class="adminToggle" />
+                    <a class="adminButton" href="#!"><i class="fas fa-share-alt"></i></a>
+                    <div class="adminButtons">
+                        <a href="https://www.facebook.com/sharer.php?u=http://andyinfosec.com{{request.path}}" title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=http://andyinfosec.com{{request.path}}&hashtags=AndyInfoSec" title="Share on twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/shareArticle?url=http://andyinfosec.com{{request.path}}&title=Andy Infosec" title="Share on LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a style="font-size:20px" href="whatsapp://send?text=http://www.andyinfosec.com{{request.path}}" title="Share by whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:?&amp;subject=Andy Infosec&amp;body=http://andyinfosec.com{{request.path}}" title="Share by email"><i class="fas fa-at"></i></a>
+                        <a href="sms://?&body=Andy InfoSec%20-%20http://andyinfosec.com{{request.path}}" title="Share by message"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+
+           
+            
+        
+    <script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="{{url_for('static',filename='assets/js/pricing-1.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/bs-animation.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{{url_for('static',filename='assets/js/Pricing-Tables-1.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/Pricing-Tables.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/pricing.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/js/theme.js')}}"></script>
+    
+</body>
+
+</html>

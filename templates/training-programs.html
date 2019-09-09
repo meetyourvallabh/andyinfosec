@@ -1,0 +1,75 @@
+<title>Cyber Security Training Programs | Andy InfoSec</title>
+{% extends 'layout.html' %} 
+
+{% block body %}
+    <style>
+    .responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+    </style>
+    <main class="page lanidng-page">
+        <div class="container">
+            <section class="pricing-table" style="margin-top: 0px;padding-bottom: 48px;padding-top: 87px;">
+                <div class="container" style="margin-top: 50px;">
+                    <div class="container text-center">
+                            <a href="http://andyinfosec.com/offer/">
+                            <img src="{{url_for('static',filename='assets/img/top5offer.jpg')}}" alt="33% OFF Offer" class="responsive"></a>
+                        </div>
+                        </br>
+                        <div class="center" style="height: 81px;">
+                                <h2 style="font-family: 'Source Sans Pro', sans-serif;">Training Programs</h2>
+                                <hr style="margin-top: -9px;">
+                            </div>
+                    <p class="text-center">The Training programs at Andy InfoSec are primarily designed for those who have cyber security career in mind.</br>
+                        They are people who are either willing to start their career in cyber security or who are already having a career but want to either add to their profile or totally switch to cyber security.To know Why our training programs are different from conventional training providers read&nbsp;<a href="http://andyinfosec.com/why-andy-infosec/"><strong>"Why Andy Infosec?"</strong></a></p>
+                    <p class="text-center">In cybersecurity domain, only theoretical knowledge or certifications, are generally insufficient to build a career. The training programs at Andy InfoSec are designed keeping that gap in mind. If you are looking for conventional certifications in cyber security, our training program may or may not help you much (depending on the type of certification program you are targeting). However if you are looking for a good career growth in cyber security, these training programs will be useful for you.</p>
+                    <p class="text-center">For any queries you can refer to&nbsp;<a href="http://andyinfosec.com/faq/"><strong>"FAQ"</strong></a> or <a href="http://andyinfosec.com/contact-us/"><strong>"Contact us"</strong></a> to schedule a call/meeting with our counselor</p></br>
+                     </div>
+                    <div class="pricing-area text-center">
+                        <div class="row">
+                            <a href="{{url_for('cyber_security_for_beginners')}}">
+                            <div class="col-sm-4 plan price red wow fadeInLeft">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading">
+                                        <h1><strong>CYBER SECURITY FOR BEGINNERS</strong></h1><span class="price"><strong><em>7,800 INR&nbsp;</em></strong>/&nbsp;<br><strong><em>10 Sessions of 2 Hrs each</em></strong></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('cyber_security_for_beginners')}}" class="btn">Click to Read More</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="{{url_for('web_application_security_expert')}}">
+                            <div class="col-sm-4 plan price green wow fadeIn">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading">
+                                        <h1><strong>WEB APPLICATION SECURITY EXPERT</strong></h1><span class="price"><strong><em>33,000 INR&nbsp;</em></strong>/<br><strong><em>120 Hrs including Hands-on Training</em></strong><br></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('web_application_security_expert')}}" class="btn">Click to Read more</a></li>
+                                </ul>
+                            </div>
+                            </a>
+                            <a href="{{url_for('certified_cyber_security_professional')}}">
+                            <div class="col-sm-4 plan price yellow wow fadeInRight"><img src="{{url_for('static',filename='assets/img/ribon_one.png')}}">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading" style="height: auto;">
+                                        <h1 style="font-size: 30px;margin-bottom: 7px;"><strong>CERTIFIED CYBER SECURITY PROFESSIONAL</strong></h1><span class="price"><strong><em>49,500 INR&nbsp;</em></strong>/<br><strong>180 Hrs including Hands-on Training</strong><br></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('certified_cyber_security_professional')}}" class="btn">Click to Read More</a></li>
+                                </ul>
+                            </div>
+                            </a>
+                            <a href="{{url_for('security_operation_center_expert')}}">
+                            <div class="col-sm-4 offset-sm-4 offset-lg-4 plan price yellow wow fadeIn">
+                                <ul class="list-group">
+                                    <li class="list-group-item heading" style="background-color: rgb(62,62,62);">
+                                        <h1><strong>SECURITY OPERATION CENTER EXPERT</strong></h1><span class="price"><strong><em>25,000 INR&nbsp;</em></strong>/<br><strong><em>80 Hrs of Hands-on Training</em></strong><br></span></li>
+                                    <li class="list-group-item plan-action"><a href="{{url_for('security_operation_center_expert')}}" class="btn">Click to Read more</a></li>
+                                </ul>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <hr>
+{% endblock %}
