@@ -135,6 +135,32 @@ def page_sitemap():
 def offer():
     return render_template("offer.html")
 
+#Services Pages ---------------
+
+@app.route('/corporate-training/')
+def corporate_training():
+    return render_template("corporate_training.html")
+
+@app.route('/webapp-testing/')
+def web_app_testing():
+    return render_template("web_app_testing.html")
+
+@app.route('/vapt/')
+def vapt():
+    return render_template("vapt.html")
+
+@app.route('/vulerability-management/')
+def vulerability_management():
+    return render_template("vulnerability_management.html")
+
+@app.route('/mobile-security/')
+def mobile_security():
+    return render_template("mobile_security.html")
+
+@app.route('/door-to-desk/')
+def door_to_desk():
+    return render_template("door_to_desk.html")
+
 @app.errorhandler(404)
 def error404(error):
     return render_template("error404.html"), 404

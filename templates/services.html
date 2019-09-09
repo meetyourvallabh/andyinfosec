@@ -2,6 +2,18 @@
 {% extends 'layout.html' %}
 
 {% block body %}
+
+<style>
+#link{
+    color: black;
+}
+#link:hover {
+	color: rgb(211, 73, 68)63, 163, 163);
+}
+
+
+</style>
+
 <main>
         <div class="container sr-only" style="margin-top: 165px;">
             <div class="row">
@@ -24,34 +36,48 @@
                         <p class="text-center">Andy InfoSec service offerings include VAPT, cyber security awareness programs (seminars, workshops, campaigns) as well as supporting security of websites for SMEs at affordable cost.</p>
                     </div>
                     <div class="row justify-content-center features">
+                        
                         <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <a href="{{url_for('corporate_training')}}">
                             <div data-aos="fade-right" data-aos-once="true" class="box"><i class="fas fa-user-tie icon" style="color: rgb(252,22,30);"></i>
-                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Corporate Training</h3>
+                                <h3 class="name" id="link" style="font-family: Aldrich, sans-serif;">Corporate Training</h3>
+                            </a>
                                 <p class="description">Want to make your employees more efficient by getting them trained in any kind of Cyber Security Training Program?</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
                         </div>
+                        
                         <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <a href="{{url_for('web_app_testing')}}">
                             <div data-aos="fade-up" data-aos-once="true" class="box"><i class="fas fa-globe icon" style="color: rgb(252,22,30);"></i>
-                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Web Application/Website Testing</h3>
+                                <h3 class="name" id="link" style="font-family: Aldrich, sans-serif;">Web Application/Website Testing</h3>
+                                </a>
                                 <p class="description">Web application security testing is a broad process that includes a multitude of processes that enable security testing of a Web application</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
                         </div>
                         <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <a href="{{url_for('vapt')}}">
                             <div data-aos="fade-left" data-aos-once="true" class="box"><i class="fa fa-list-alt icon" style="color: rgb(252,22,30);"></i>
-                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+                                <h3 class="name" id="link" style="font-family: Aldrich, sans-serif;">Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+                                </a>
                                 <p class="description">Vulnerability Assessment and Penetration Testing (VAPT) provides enterprises with a more comprehensive application evaluation than any single test alone</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
                         </div>
                         <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <a href="{{url_for('vulerability_management')}}">
                             <div data-aos="fade-right" data-aos-once="true" class="box"><i class="fas fa-wrench icon" style="color: rgb(252,22,30);"></i>
-                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Vulnerability Management</h3>
+                                <h3 class="name" id="link" style="font-family: Aldrich, sans-serif;">Vulnerability Management</h3>
+                                </a>
                                 <p class="description">No need to worry as our Vulnerability Management Service can help you in keeping your business secure even after various updates or upgrades.</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
                         </div>
                         <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <a href="{{url_for('mobile_security')}}">
                             <div data-aos="fade-up" data-aos-once="true" class="box"><i class="fas fa-mobile-alt icon" style="color: rgb(252,22,30);"></i>
-                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Mobile Application Security Testing</h3>
+                                <h3 class="name" id="link" style="font-family: Aldrich, sans-serif;">Mobile Application Security Testing</h3>
+                                </a>
                                 <p class="description">No need to worry about heavy costs of Security Testing as we will make it fit to your budget that will not affect your pocket much.</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
                         </div>
                         <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <a href="{{url_for('door_to_desk')}}">
                             <div data-aos="fade-left" data-aos-once="true" class="box"><i class="fas fa-door-open icon" style="color: rgb(252,22,30);"></i>
-                                <h3 class="name" style="font-family: Aldrich, sans-serif;">Door to Desk (Red Team)</h3>
+                                <h3 class="name" id="link" style="font-family: Aldrich, sans-serif;">Door to Desk (Red Team)</h3>
+                                </a>
                                 <p class="description">We call it Door to Desk as we test your Physical Environment/ Premises of your organization from the Entry gate to Employees Desk. It is called as Red Team Security Testing.</p><a href="#" class="learn-more sr-only">Learn more »</a></div>
                         </div>
                     </div>
